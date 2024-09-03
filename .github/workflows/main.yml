@@ -27,5 +27,5 @@ jobs:
       with:
         push: true
         tags: |
-          your-dockerhub-anupams20/gha_work:latest
-          your-dockerhub-anupams20/gha_work:${{ github.run_number }}
+          anupams20/gha_work:latest
+          anupams20/gha_work:${{ github.run_number }}
