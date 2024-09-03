@@ -19,15 +19,15 @@ jobs:
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
       with:
-        username: ${{ secrets.username }}
-        password: ${{ secrets.password}}
+        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN}}
 
     - name: Build and push Docker image
       uses: docker/build-push-action@v4
       with:
         push: true
         tags: |
-          your-dockerhub-anupams20/my_random_latest:latest
-          your-dockerhub-anupams20/my_random_latest:${{ github.run_number }}
+          your-dockerhub-anupams20/my_random_mysql:latest
+          your-dockerhub-anupams20/my_random_mysql:${{ github.run_number }}
         cache-from: type=cache,mode=max
         cache-to: type=cache,mode=max
