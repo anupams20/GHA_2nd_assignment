@@ -20,7 +20,7 @@ jobs:
       uses: docker/login-action@v2
       with:
         username: ${{ secrets.anupams20 }}
-        password: ${{ secrets.dckr_pat__jMZVvSFNTz2kNDF-vre1D0OBtk }}
+        password: ${{ secrets.Sanupam2000@ }}
 
     - name: Build and push Docker image
       uses: docker/build-push-action@v4
