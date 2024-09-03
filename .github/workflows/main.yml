@@ -29,5 +29,3 @@ jobs:
         tags: |
           your-dockerhub-anupams20/my_random_mysql:latest
           your-dockerhub-anupams20/my_random_mysql:${{ github.run_number }}
-        cache-from: type=cache,mode=max
-        cache-to: type=cache,mode=max
