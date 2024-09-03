@@ -23,8 +23,6 @@ jobs:
         tags: |
           your-dockerhub-anupams20/my_random_latest:latest
           your-dockerhub-anupams20/my_random_latest:${{ github.run_number }}
-        cache-from: type=cache,mode=max
-        cache-to: type=cache,mode=max
 
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
